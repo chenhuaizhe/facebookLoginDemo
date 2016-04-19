@@ -13,12 +13,12 @@
 		01679CF91CC6065100F236B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01679CF71CC6065100F236B2 /* Main.storyboard */; };
 		01679CFB1CC6065100F236B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01679CFA1CC6065100F236B2 /* Assets.xcassets */; };
 		01679CFE1CC6065100F236B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01679CFC1CC6065100F236B2 /* LaunchScreen.storyboard */; };
-		01679D091CC606AC00F236B2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D061CC606AC00F236B2 /* FBSDKCoreKit.framework */; };
-		01679D0A1CC606AC00F236B2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D071CC606AC00F236B2 /* FBSDKLoginKit.framework */; };
-		01679D0B1CC606AC00F236B2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D081CC606AC00F236B2 /* FBSDKShareKit.framework */; };
 		01679D141CC63F6A00F236B2 /* SUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 01679D111CC63F6A00F236B2 /* SUCache.m */; };
 		01679D151CC63F6A00F236B2 /* SUCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01679D131CC63F6A00F236B2 /* SUCacheItem.m */; };
 		01679D171CC641F800F236B2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D161CC641F800F236B2 /* Security.framework */; };
+		01679D1B1CC6573D00F236B2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D181CC6573C00F236B2 /* FBSDKCoreKit.framework */; };
+		01679D1C1CC6573D00F236B2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D191CC6573C00F236B2 /* FBSDKLoginKit.framework */; };
+		01679D1D1CC6573D00F236B2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D1A1CC6573D00F236B2 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,14 +32,14 @@
 		01679CFA1CC6065100F236B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01679CFD1CC6065100F236B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01679CFF1CC6065100F236B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01679D061CC606AC00F236B2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		01679D071CC606AC00F236B2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		01679D081CC606AC00F236B2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		01679D101CC63F6A00F236B2 /* SUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUCache.h; sourceTree = "<group>"; };
 		01679D111CC63F6A00F236B2 /* SUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUCache.m; sourceTree = "<group>"; };
 		01679D121CC63F6A00F236B2 /* SUCacheItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUCacheItem.h; sourceTree = "<group>"; };
 		01679D131CC63F6A00F236B2 /* SUCacheItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUCacheItem.m; sourceTree = "<group>"; };
 		01679D161CC641F800F236B2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		01679D181CC6573C00F236B2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = fabdemo/facebook/FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
+		01679D191CC6573C00F236B2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = fabdemo/facebook/FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
+		01679D1A1CC6573D00F236B2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = fabdemo/facebook/FBSDKShareKit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01679D1D1CC6573D00F236B2 /* FBSDKShareKit.framework in Frameworks */,
 				01679D171CC641F800F236B2 /* Security.framework in Frameworks */,
-				01679D0A1CC606AC00F236B2 /* FBSDKLoginKit.framework in Frameworks */,
-				01679D091CC606AC00F236B2 /* FBSDKCoreKit.framework in Frameworks */,
-				01679D0B1CC606AC00F236B2 /* FBSDKShareKit.framework in Frameworks */,
+				01679D1B1CC6573D00F236B2 /* FBSDKCoreKit.framework in Frameworks */,
+				01679D1C1CC6573D00F236B2 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +102,10 @@
 		01679D051CC606AC00F236B2 /* facebook */ = {
 			isa = PBXGroup;
 			children = (
+				01679D181CC6573C00F236B2 /* FBSDKCoreKit.framework */,
+				01679D191CC6573C00F236B2 /* FBSDKLoginKit.framework */,
+				01679D1A1CC6573D00F236B2 /* FBSDKShareKit.framework */,
 				01679D161CC641F800F236B2 /* Security.framework */,
-				01679D061CC606AC00F236B2 /* FBSDKCoreKit.framework */,
-				01679D071CC606AC00F236B2 /* FBSDKLoginKit.framework */,
-				01679D081CC606AC00F236B2 /* FBSDKShareKit.framework */,
 			);
 			path = facebook;
 			sourceTree = "<group>";
@@ -312,6 +312,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/facebook",
+					"$(PROJECT_DIR)/fabdemo/facebook",
 				);
 				INFOPLIST_FILE = fabdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -327,6 +328,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/facebook",
+					"$(PROJECT_DIR)/fabdemo/facebook",
 				);
 				INFOPLIST_FILE = fabdemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
