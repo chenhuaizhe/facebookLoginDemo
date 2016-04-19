@@ -1,5 +1,9 @@
 # facebookLoginDemo
 facebook第三方登录的demo
+## 注意
+### 1.下载下来工程的话，自己需要添加那几个framework，工程才能运行。
+### 2.考虑到网络问题，我也打了一个zip的包,里面是facebook的framework，在工程根目录下，解压后再拖到工程里进行使用
+
 >Demo地址： https://github.com/chenhuaizhe/facebookLoginDemo
 
 ## 前期工作
