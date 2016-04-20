@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,15 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bW7-Yi-RGc">
-                                <rect key="frame" x="281" y="216" width="38" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bW7-Yi-RGc">
+                                <rect key="frame" x="281" y="285" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Je-7p-59W"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSl-LP-Ags">
-                                <rect key="frame" x="279" y="107" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSl-LP-Ags">
+                                <rect key="frame" x="175" y="155" width="250" height="100"/>
+                                <color key="backgroundColor" red="0.91899671052631571" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="3LM-DG-ygy"/>
                                     <constraint firstAttribute="width" constant="250" id="N4j-50-yD1"/>
@@ -34,18 +36,41 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Jd-iY-PCd" customClass="UIImageView">
+                                <rect key="frame" x="250" y="335" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Gdi-YI-SEA"/>
+                                    <constraint firstAttribute="width" constant="100" id="yyj-1v-xlj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7Jd-iY-PCd" firstAttribute="top" secondItem="bW7-Yi-RGc" secondAttribute="bottom" constant="20" id="2CH-Em-2vo"/>
                             <constraint firstItem="bW7-Yi-RGc" firstAttribute="top" secondItem="ZSl-LP-Ags" secondAttribute="bottom" constant="30" id="9D3-KO-cqy"/>
+                            <constraint firstItem="bW7-Yi-RGc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CaG-Za-uL3"/>
                             <constraint firstItem="bW7-Yi-RGc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lm4-0A-KxR"/>
+                            <constraint firstItem="7Jd-iY-PCd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-42" id="P2a-AV-ffX"/>
+                            <constraint firstItem="bW7-Yi-RGc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aUM-03-5wI"/>
                             <constraint firstItem="ZSl-LP-Ags" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gKy-z9-B87"/>
+                            <constraint firstItem="7Jd-iY-PCd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbL-Hh-ej6"/>
+                            <constraint firstItem="ZSl-LP-Ags" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p5J-yc-Sd6"/>
                             <constraint firstItem="bW7-Yi-RGc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rqS-7i-EOl"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gKy-z9-B87"/>
+                                <exclude reference="Lm4-0A-KxR"/>
+                                <exclude reference="rqS-7i-EOl"/>
+                                <exclude reference="P2a-AV-ffX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="infoLabel" destination="ZSl-LP-Ags" id="FPa-kn-FrQ"/>
                         <outlet property="loginButton" destination="bW7-Yi-RGc" id="e9O-VP-BYi"/>
+                        <outlet property="pictureView" destination="7Jd-iY-PCd" id="yOz-8Z-Kfg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

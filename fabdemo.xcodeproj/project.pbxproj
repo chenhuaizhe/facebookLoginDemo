@@ -16,6 +16,10 @@
 		01679D141CC63F6A00F236B2 /* SUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 01679D111CC63F6A00F236B2 /* SUCache.m */; };
 		01679D151CC63F6A00F236B2 /* SUCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 01679D131CC63F6A00F236B2 /* SUCacheItem.m */; };
 		01679D171CC641F800F236B2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D161CC641F800F236B2 /* Security.framework */; };
+		01679D271CC7196400F236B2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D241CC7196300F236B2 /* FBSDKCoreKit.framework */; };
+		01679D281CC7196400F236B2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D251CC7196300F236B2 /* FBSDKLoginKit.framework */; };
+		01679D291CC7196400F236B2 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01679D261CC7196300F236B2 /* FBSDKShareKit.framework */; };
+		01679D2C1CC72FE100F236B2 /* UIImageView+CreateByUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 01679D2B1CC72FE100F236B2 /* UIImageView+CreateByUrl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,11 @@
 		01679D121CC63F6A00F236B2 /* SUCacheItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUCacheItem.h; sourceTree = "<group>"; };
 		01679D131CC63F6A00F236B2 /* SUCacheItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUCacheItem.m; sourceTree = "<group>"; };
 		01679D161CC641F800F236B2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		01679D241CC7196300F236B2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		01679D251CC7196300F236B2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		01679D261CC7196300F236B2 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		01679D2A1CC72FE100F236B2 /* UIImageView+CreateByUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CreateByUrl.h"; sourceTree = "<group>"; };
+		01679D2B1CC72FE100F236B2 /* UIImageView+CreateByUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CreateByUrl.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01679D291CC7196400F236B2 /* FBSDKShareKit.framework in Frameworks */,
 				01679D171CC641F800F236B2 /* Security.framework in Frameworks */,
+				01679D271CC7196400F236B2 /* FBSDKCoreKit.framework in Frameworks */,
+				01679D281CC7196400F236B2 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +105,9 @@
 		01679D051CC606AC00F236B2 /* facebook */ = {
 			isa = PBXGroup;
 			children = (
+				01679D241CC7196300F236B2 /* FBSDKCoreKit.framework */,
+				01679D251CC7196300F236B2 /* FBSDKLoginKit.framework */,
+				01679D261CC7196300F236B2 /* FBSDKShareKit.framework */,
 				01679D161CC641F800F236B2 /* Security.framework */,
 			);
 			path = facebook;
@@ -101,6 +116,8 @@
 		01679D0C1CC636EE00F236B2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				01679D2A1CC72FE100F236B2 /* UIImageView+CreateByUrl.h */,
+				01679D2B1CC72FE100F236B2 /* UIImageView+CreateByUrl.m */,
 				01679D101CC63F6A00F236B2 /* SUCache.h */,
 				01679D111CC63F6A00F236B2 /* SUCache.m */,
 				01679D121CC63F6A00F236B2 /* SUCacheItem.h */,
@@ -184,6 +201,7 @@
 				01679CF31CC6065100F236B2 /* AppDelegate.m in Sources */,
 				01679CF01CC6065100F236B2 /* main.m in Sources */,
 				01679D151CC63F6A00F236B2 /* SUCacheItem.m in Sources */,
+				01679D2C1CC72FE100F236B2 /* UIImageView+CreateByUrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

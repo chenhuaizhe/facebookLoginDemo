@@ -10,11 +10,14 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "SUCache.h"
+#import <UIKit/UIKit.h>
+#import "UIImageView+CreateByUrl.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *pictureView;
 
 @end
 
@@ -129,6 +132,9 @@
         cacheItem.profile = profile;
         [SUCache saveItem:cacheItem slot:slot];
         self.infoLabel.text = [NSString stringWithFormat:@"name = %@,userID = %@",cacheItem.profile.name,cacheItem.profile.userID];
+       NSURL *imgURL = [profile imageURLForPictureMode:FBSDKProfilePictureModeNormal size:self.pictureView.frame.size];
+        [self.pictureView setImageByUrl:[NSString stringWithFormat:@"%@",imgURL]];
+        
     }
 }
 
